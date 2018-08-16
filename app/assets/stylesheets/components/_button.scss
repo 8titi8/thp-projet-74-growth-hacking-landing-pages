@@ -1,0 +1,26 @@
+.banner-btn {
+  position: relative;
+  top: 30%;
+  left: 55%;
+}
+
+.btn-light-green {
+  padding: 5px 50px;
+  background-color: $light-green;
+  border: 1px solid $light-green;
+  border-radius: 25px;
+  color: $white;
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.btn-light-green:hover {
+  color: $white;
+  text-decoration: none;
+  background-color: $dark-blue;
+  cursor: pointer;
+  border: 1px solid $dark-blue;
+}
+

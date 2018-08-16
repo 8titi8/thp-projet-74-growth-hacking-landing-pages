@@ -1,0 +1,47 @@
+div.top-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0
+}
+
+nav.top-navbar {
+  background-color: $dark-blue;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Ajuste la taille du logo*/
+#logo {
+  height: 40px;
+  padding-bottom: 5px;
+}
+
+/* Centre les éléments de droite et les aligner entre eux*/
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+
+/* Retire les puces de la liste*/
+ul {
+  list-style: none;
+}
+
+/* Met en forme les boutons cliquables */
+.nav-items a {
+  color: #3A3A3A;
+  text-decoration: none;
+  margin: 8px;
+}
+
+/* Mise en forme lorque l'on passe la souris dessus */
+.nav-items a:hover {
+  opacity: 0.5;
+}

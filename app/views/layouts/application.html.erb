@@ -4,12 +4,21 @@
     <title>The Hacking Project</title>
     <meta name="description" content="The Hacking Project, la formation gratuite pour apprendre à coder en 3 mois, qui repose principalement sur sa communauté." />
 
-    <!-- Meta data pour pouvoir partager lien page sur facebook -->
+    <!-- OPen Graph Meta data pour pouvoir partager lien page sur facebook -->
     <meta property="og:url" content="https://the-hacking-project-2018.herokuapp.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Quand coder devient possible pour tous" />
-    <meta property="og:description" content="Quoi ? Il existe une formation gratuite en 3 mois seulement ?" />
-    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+    <meta property="og:title" content="Quand coder devient accessible pour tous" />
+    <meta property="og:description" content="The Hacking Project c'est une formation gratuite pour apprendre à coder en 3 mois, qui repose principalement sur sa communauté." />
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/05/04/10/30/team-3373638_960_720.jpg" />
+
+        <!-- Twitter Card meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thehackingproject.org">
+    <meta name="twitter:title" content="Quand coder devient accessible pour tous">
+    <meta name="twitter:description" content="Page description : less than 200 characters">
+    <meta name="twitter:creator" content="@ThpNice">
+    <meta name="twitter:image:src" content="https://cdn.pixabay.com/photo/2018/05/04/10/30/team-3373638_640.jpg">
+
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -24,7 +33,9 @@
 
   <body>
     <%= render 'shared/header' %>
-    <%= yield %>
+      <main>
+        <%= yield %>
+      </main>
     <%= render 'shared/footer' %>
   </body>
 </html>
