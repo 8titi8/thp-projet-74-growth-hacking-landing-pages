@@ -2,6 +2,8 @@ class LandingPageController < ApplicationController
   def index
 
     #@mailscrap = ScrapEsiee.new.perform
-    #a servi à creer le fichier csv
+    #@mailscrap = ScrapArtists.new.perform
+    #ces 2 commandes ont permi de lancer les 2 scrappings et les compiler
+    # dans un csv qui est sur app/db.
   end
 end

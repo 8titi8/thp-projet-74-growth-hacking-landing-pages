@@ -5,7 +5,7 @@ require 'csv' #pour enregistrement csv
 
 class ScrapEsiee
 
-puts "attention scrapping, go go go!"
+puts "attention scrapping Esiee, go go go!"
 
 # méthode qui lance le programme
   def initialize
