@@ -16,7 +16,7 @@ gem 'nokogiri'
 # Using the bootstrap librairy for css
 gem 'bootstrap', '~> 4.1.3'
 # Use for hidding API keys
-gem 'dotenv'
+gem 'dotenv-rails'
 # Use for using mailchimp
 gem 'gibbon'
 # Use Uglifier as compressor for JavaScript assets
