@@ -3,11 +3,10 @@
 require 'gmail'   # on va chercher la gem gmail qui va nous permettre de transmettre nos messages
 require 'dotenv'  # permet de se servir du .env qui contient le password
 require 'mail'    # permet de mettre en format html  le message envoyé
-require 'json'    # va nous permettre de récup et utiliser le fichier json
 require 'csv'
 
 Dotenv.load
-
+## essai d'envoi depuis services infructueux, on passe sur mailChimp
 class MailerArtist
   attr_accessor :email, :session_gmail
     # def qui va lancer gmail lorsque l'on va lancer la classe
@@ -56,7 +55,7 @@ class MailerArtist
     end
 
     def get_email_from_csv
-        CSV.foreach("./../db/scrap_artistes.csv") do |row|
+        CSV.foreach("./db/scrap_artistes.csv") do |row|
          message(row[0])
         end
     end
