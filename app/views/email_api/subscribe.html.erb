@@ -1,3 +1,8 @@
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+
 <h1>Get My Awesome News Letter</h1>
 <p>Give me your email and keep up to date on my cat's thoughts.</p>
 <%= form_tag('subscribe', method: "post", id: "subscribe", remote: "true") do -%>

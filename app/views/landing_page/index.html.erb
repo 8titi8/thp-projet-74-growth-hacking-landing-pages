@@ -1,5 +1,8 @@
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
 <h1>LandingPage#index</h1>
 <p>Find me in app/views/landing_page/index.html.erb</p>
 
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"a6211a3cf97e7d4b0cfc5e222","lid":"a635d38f59"}) })</script>
+<%= link_to("S'inscrire", subscribe_path) %>
