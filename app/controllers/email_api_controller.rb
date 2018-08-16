@@ -11,7 +11,7 @@ class EmailApiController < ApplicationController
       redirect_to subscribe_path
     else
       subscriber = Subscriber.new
-      subscriber.first_name = params[:person][:first_name]
+      p subscriber.first_name = params[:person][:first_name]
       subscriber.last_name = params[:person][:last_name]
       subscriber.email = params[:email][:address]
 
@@ -32,11 +32,11 @@ class EmailApiController < ApplicationController
         end
         flash[:success] = "Super ! Tu viens de t'abonner à notre Newsletter"
         redirect_to home_path
-      elsif subscriber.first_name.nil?
-        flash[:alert] = "Merci de renseigner au moins un prénom et une adresse mail valide"
+      elsif params[:person][:first_name] == ""
+        flash[:alert] = "Merci de renseigner au moins un prénom"
         redirect_to subscribe_path
       else
-        flash[:alert] = "Merci de renseigner au moins une adresse mail valide"
+        flash[:alert] = "Merci de renseigner au moins une adresse mail"
         redirect_to subscribe_path
       end
     end

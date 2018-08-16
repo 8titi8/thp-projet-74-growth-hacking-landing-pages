@@ -6,11 +6,13 @@
 <h1>Get My Awesome News Letter</h1>
 <p>Give me your email and keep up to date on my cat's thoughts.</p>
 <%= form_tag('subscribe', method: "post", id: "subscribe", remote: "true") do -%>
-  <%= label_tag 'Ton prénom'  %>
+  <%= label_tag 'Ton prénom*'  %>
   <%= text_field(:person, :first_name, placeholder: 'Juste') %>
   <%= label_tag 'Ton nom'  %>
   <%= text_field(:person, :last_name, placeholder: 'Leblanc') %>
-  <%= label_tag 'Ton email'  %>
+  <%= label_tag 'Ton email*'  %>
   <%= email_field(:email, :address, {id: "email", placeholder: "j.leblanc@gmail.com"}) %>
   <%= submit_tag("Sign me up!") %>
 <% end %>
+
+<p>Les champs avec * sont obligatoires</p>
