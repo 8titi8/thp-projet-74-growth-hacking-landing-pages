@@ -1,8 +1,10 @@
 <% flash.each do |key, value| %>
-    <div class="alert alert-<%= key %>"><%= value %></div>
+    <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
 <% end %>
 
-<h1>LandingPage#index</h1>
-<p>Find me in app/views/landing_page/index.html.erb</p>
+<%= render 'landing_page/upper_banner'  %>
+<%= render 'landing_page/upper_section'  %>
+<%= render 'landing_page/middle_banner'  %>
+<%= render 'landing_page/lower_section'  %>
 
 <%= link_to("S'inscrire", subscribe_path) %>
