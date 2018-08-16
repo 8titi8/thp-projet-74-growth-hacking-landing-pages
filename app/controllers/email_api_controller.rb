@@ -1,6 +1,28 @@
-class EmailApiController < ApplicationController
-  def subscribe
+require 'csv'
 
+class EmailApiController < ApplicationController
+
+  def add_scrapped_email_to_mailchimp
+    @list_id = ENV["MAILCHIMP_LIST_ID_SCRAP"]
+    gibbon = Gibbon::Request.new
+    CSV.foreach("./db/scrap_esiee.csv") do |row|
+      begin
+        gibbon.lists(@list_id).members.create(
+          body: {
+          email_address: row[0],
+          status: "subscribed",
+          }
+        )
+      rescue Gibbon::MailChimpError => e
+       puts "Houston, we have a problem: #{e.message} - #{e.raw_body}"
+      end
+    end
+  end
+
+
+  def subscribe
+    # add_scrapped_email_to_mailchimp
+    #=> lors du chargement de la page /subscribe lance l'enregistrement des emails dans une liste mailchimp
   end
 
   def subscribing
