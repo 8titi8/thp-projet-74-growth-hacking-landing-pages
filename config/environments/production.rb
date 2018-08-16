@@ -1,6 +1,15 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.mailer_artist = :smtp
+# SMTP settings for gmail
+config.mailer_artist.smtp_settings = {
+ :address              => "smtp.gmail.com",
+ :port                 => 587,
+ :user_name            => ENV['gmail_username'],
+ :password             => ENV['gmail_password'],
+ :authentication       => "plain",
+  :enable_starttls_auto => true
+}
   # Code is not reloaded between requests.
   config.cache_classes = true
 
