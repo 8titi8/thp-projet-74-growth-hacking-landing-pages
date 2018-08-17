@@ -3,7 +3,9 @@ require 'csv'
 class EmailApiController < ApplicationController
 
   def add_scrapped_email_to_mailchimp
-    @list_id = ENV["MAILCHIMP_LIST_ID_SCRAP"]
+    # @list_id = ENV["MAILCHIMP_LIST_ID_SCRAP"]
+    # pour developpement en local
+    @list_id = Rails.application.credentials.dig(:MAILCHIMP_LIST_ID_SCRAP)
     gibbon = Gibbon::Request.new
     CSV.foreach("./db/scrap_esiee.csv") do |row|
       begin
@@ -26,7 +28,9 @@ class EmailApiController < ApplicationController
   end
 
   def subscribing
-    @list_id = ENV["MAILCHIMP_LIST_ID"]
+    # @list_id = ENV["MAILCHIMP_LIST_ID"]
+    # pour developpement en local
+    @list_id = Rails.application.credentials.dig(:MAILCHIMP_LIST_ID)
     gibbon = Gibbon::Request.new
     if Subscriber.exists?(:email => params[:email][:address])
       flash[:alert] = "Cette adresse email existe déjà !"
