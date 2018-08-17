@@ -1,8 +1,8 @@
-Il était une fois...
+Il était une fois... 📖
 
-Mathilde, Gaëlle, Thomas et THP 
+Mathilde  🐳, Gaëlle 🐞, Thomas 🐰 et THP 
 
-## Récap :
+## Récap : 📋
 
 Ce projet est la version en production du projet des Landings Pages & Growth Hacking. Un site qui regroupe tous les composants que nous avons codé :
 
@@ -14,12 +14,13 @@ Ce projet est la version en production du projet des Landings Pages & Growth Hac
 * **Inscription à une newsletter envoyée toutes les 2 semaines grace à Heroku Scheduler**
 * **Bot twitter grace aux scrappings initiaux**
 
-## Lien Heroku :
+## Lien Heroku : 🚀
 
 https://the-hacking-project-2018.herokuapp.com/
+
 Made with ❤️ and 💦
 
-## Localement :
+## Localement : 🖥
 
 * **Lancer** `$ git clone "lien"`
 * **Lancer** `$ bundle install`
@@ -28,7 +29,7 @@ Made with ❤️ and 💦
 * **Lancer** `$ rails server`
 * **Se rendre sur localhost:3000 via votre navigateur**
 
-## Les gems :
+## Les gems : 💎
 
 * gem 'bootstrap-sass'
 * gem 'autoprefixer-rails'
@@ -41,7 +42,7 @@ Made with ❤️ and 💦
 * gem ‘figaro’ pour cacher les cles gmail
 * gem 'twitter' pour notre bot
 
-## Les targets :
+## Les targets : 🎯
 
 * **Association des Elèves et des Anciens Elèves de l'INP**
 
@@ -51,25 +52,27 @@ Pour cette target, THP peut être intéressant pour présenter leur travail de r
 
 Forcément avec un blaze pareil, si tu ne sais pas coder, tu n’es pas dans le gamzer !
 
-## Nos Pages :
+## Nos Pages : 📰
 
 Une seule et belle **landing_page** (mais nous ne sommes que 3 dans l'équipe, un peu d'indulgence 🤗 )
 
 Mais une **deuxièmre page** dédiée à l'inscription à la Newsletter ! 😲
 
 
-## Notre marketing :
+## Notre marketing : 📈
 
 Envoi d'emails à plus de **1400 personnes** (sur les 2 cibles choisies).
 
 ![Validation Mailchimp Envoi Email](https://zupimages.net/up/18/33/kvpv.png)
 
 Envoi d'une Newsletter lorsque les personnes s'abonnent à notre liste de diffusion (avec envoi toutes les 2 semaines).
+
+
 ![Validation Mailchimp Envoi Email](https://zupimages.net/up/18/33/1as6.png)
 
 Bot twitter sur les comptes des étudiants de l'ESIEE.
 
-## Nos emails & Newsletter :
+## Nos emails & Newsletter : 💌
 
 Si vous voulez voir à quoi ressemble notre email de growth hacking et notre newsletter :
 * Email [Growth Hacking](https://mailchi.mp/2e91ea6097eb/devenez-un-crack-en-hacking-9255)
@@ -79,7 +82,7 @@ Si vous voulez voir à quoi ressemble notre email de growth hacking et notre new
 
 ![Aperçu de la Newsletter](https://zupimages.net/up/18/33/gmd0.png)
 
-## Nos statistiques :
+## Nos statistiques : 📊
 
 Google (encore eux) Analytics
 
