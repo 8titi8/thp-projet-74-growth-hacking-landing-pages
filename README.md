@@ -54,13 +54,16 @@ Forcément avec un blaze pareil, si tu ne sais pas coder, tu n’es pas dans le 
 ## Nos Pages :
 
 Une seule et belle **landing_page** (mais nous ne sommes que 3 dans l'équipe, un peu d'indulgence 🤗 )
+
 Mais une **deuxièmre page** dédiée à l'inscription à la Newsletter ! 😲
 
 
 ## Notre marketing :
 
 Envoi d'emails à plus de **1400 personnes** (sur les 2 cibles choisies).
+
 Envoi d'une Newsletter lorsque les personnes s'abonnent à notre liste de diffusion (avec envoi toutes les 2 semaines).
+
 Bot twitter sur les comptes des étudiants de l'ESIEE.
 
 ## Nos emails & Newsletter :
