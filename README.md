@@ -70,9 +70,11 @@ Bot twitter sur les comptes des étudiants de l'ESIEE.
 
 Si vous voulez voir à quoi ressemble notre email de growth hacking et notre newsletter :
 * Email [Growth Hacking](https://mailchi.mp/2e91ea6097eb/devenez-un-crack-en-hacking-9255)
-![Aperçu de l'email](/home/titi/Bureau/THP/7-Semaine/3-Landing-Pages-Bootstrap-Scrap-Mailing/Images)
+
+![Aperçu de l'email](https://zupimages.net/up/18/33/z13g.png)
 * [Newsletter #1](https://mailchi.mp/6322cf51799b/thp-cest-lavenir-en-marche)
-![Aperçu de la Newsletter](/home/titi/Bureau/THP/7-Semaine/3-Landing-Pages-Bootstrap-Scrap-Mailing/Images)
+
+![Aperçu de la Newsletter](https://zupimages.net/up/18/33/gmd0.png)
 
 ## Nos statistiques :
 
