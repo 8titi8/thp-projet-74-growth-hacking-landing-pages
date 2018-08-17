@@ -1,14 +1,8 @@
-.banner-btn {
-  position: relative;
-  top: 30%;
-  left: 55%;
-}
-
 .btn-light-green {
-  padding: 5px 50px;
   background-color: $light-green;
   border: 1px solid $light-green;
   border-radius: 25px;
+  box-shadow: 1px 2px 5px $gray;
   color: $white;
   font-family: $title-font;
   font-weight: 500;
@@ -20,7 +14,7 @@
   color: $white;
   text-decoration: none;
   background-color: $dark-blue;
-  cursor: pointer;
   border: 1px solid $dark-blue;
+  cursor: pointer;
 }
 

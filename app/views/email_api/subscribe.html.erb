@@ -1,18 +1,40 @@
-<% flash.each do |key, value| %>
-    <div class="alert alert-<%= key %>"><%= value %></div>
-<% end %>
+<section class="subscribe">
+  <div class="subscribe-container container">
+    <div class="subscribe-wrapper wrapper">
+      <div class="row">
+        <div class="subscribe-form col-12 col-sm-8 col-md-8">
+          <% flash.each do |key, value| %>
+              <div class="alert alert-<%= key %>"><%= value %></div>
+          <% end %>
+          <div class="container-fluid">
+            <h1 class="title">N'hésite plus, abonne-toi !</h1>
+            <p>Encore un doute ? Derrière ce site, des étudiants THP qui ont commencé le code il y a un mois !</p> <br>
+          </div>
+          <div class="container-fluid">
+            <h4>Tes infos</h4> <br>
+            <%= form_tag('subscribe', method: "post", id: "subscribe", remote: "true") do -%>
+              <div class="form-group">
+              <%= label_tag 'Ton prénom*'  %> <br>
+              <%= text_field(:person, :first_name, class: "box", placeholder: 'Prénom') %>
+              </div>
+              <div class="form-group">
+              <%= label_tag 'Ton nom'  %> <br>
+              <%= text_field(:person, :last_name, class: "box", placeholder: 'Nom') %>
+              </div>
+              <div class="form-group">
+              <%= label_tag 'Ton email*'  %> <br>
+              <%= email_field(:email, :address, {id: "email", class: "box", placeholder: "exemple@gmail.com"}) %> <br>
+              <small id="emailHelp" class="form-text text-muted">Promis on ne le partage pas !</small>
+              </div>
+              <%= submit_tag("Je m'abonne !", class: "btn-light-green btn-subscribe") %>
+          <% end %>
+          <small id="emailHelp" class="form-text text-muted">Les champs avec * sont obligatoires</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-<h1>Get My Awesome News Letter</h1>
-<p>Give me your email and keep up to date on my cat's thoughts.</p>
-<%= form_tag('subscribe', method: "post", id: "subscribe", remote: "true") do -%>
-  <%= label_tag 'Ton prénom*'  %>
-  <%= text_field(:person, :first_name, placeholder: 'Juste') %>
-  <%= label_tag 'Ton nom'  %>
-  <%= text_field(:person, :last_name, placeholder: 'Leblanc') %>
-  <%= label_tag 'Ton email*'  %>
-  <%= email_field(:email, :address, {id: "email", placeholder: "j.leblanc@gmail.com"}) %>
-  <%= submit_tag("Sign me up!") %>
-<% end %>
 
-<p>Les champs avec * sont obligatoires</p>

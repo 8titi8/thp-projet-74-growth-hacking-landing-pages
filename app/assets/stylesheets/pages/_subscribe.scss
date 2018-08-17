@@ -1,3 +1,70 @@
 // Place all the styles related to the EmailApi controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+section.subscribe {
+  padding-top: 25px;
+  position: absolute;
+  background: linear-gradient(225deg, rgba(67, 198, 172,0.8) 5%, rgba(25,22,84,0.7) 70%), image-url('keyboard.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.subscribe-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.subscribe-form {
+  margin-top: 48px;
+  padding-top: 25px;
+  margin-left: 20%;
+  font-family: $title-font;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 3;
+}
+
+.subscribe-form { .title, p {
+  text-align: center;
+  }
+}
+.subscribe-form .title {
+  font-size: 40px;
+}
+
+.subscribe-form p {
+  font-size: 20px;
+}
+
+.subscribe-form .form-group {
+  font-size: 18px;
+}
+
+.subscribe-form h4 {
+  font-size: 25px;
+  text-align: center;
+}
+.subscribe-form .form-group .box {
+ padding: 2px 23px 2px 8px;
+ color: $gray;
+ font-style: italic;
+}
+
+#emailHelp {
+  color: $white;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.btn-subscribe {
+  padding: 5px 30px;
+}
+
+
