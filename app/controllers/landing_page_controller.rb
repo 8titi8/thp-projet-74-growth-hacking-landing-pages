@@ -5,6 +5,6 @@ class LandingPageController < ApplicationController
     #@mailscrap = ScrapArtists.new.perform
     #ces 2 commandes ont permi de lancer les 2 scrappings et les compiler
     # dans un csv qui est sur app/db.
-
+      @handle = TwitterHandleEsiee.new.perform
   end
 end
