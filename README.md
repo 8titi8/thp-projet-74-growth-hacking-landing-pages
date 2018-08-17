@@ -62,7 +62,10 @@ Mais une **deuxièmre page** dédiée à l'inscription à la Newsletter ! 😲
 
 Envoi d'emails à plus de **1400 personnes** (sur les 2 cibles choisies).
 
+![Validation Mailchimp Envoi Email](https://zupimages.net/up/18/33/j3c5.png)
+
 Envoi d'une Newsletter lorsque les personnes s'abonnent à notre liste de diffusion (avec envoi toutes les 2 semaines).
+![Validation Mailchimp Envoi Email](https://zupimages.net/up/18/33/2ewz.png)
 
 Bot twitter sur les comptes des étudiants de l'ESIEE.
 
